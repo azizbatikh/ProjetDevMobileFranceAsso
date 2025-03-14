@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/page2"
+    android:orientation="vertical"
+    tools:context=".Page2"
+    >
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="100px"
+        android:id="@+id/backbutton"
+        android:src="@drawable/arrowback"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45px"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="100px"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="-38dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/reglage"
+        />
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/barrederecherche"
+        android:iconifiedByDefault="false"
+        android:queryHint="Rechercher..."
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/textFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filtretexte"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/calistoga"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listedons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10px"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="60dp"
+        />
+
+    <com.google.android.flexbox.FlexboxLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:justifyContent="center"
+        android:padding="10dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:background="@color/white"
+            android:paddingRight="30dp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aaa"
+            android:background="@color/white"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group"
+            android:background="@color/white"
+            android:paddingLeft="30dp"
+            />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</LinearLayout>
