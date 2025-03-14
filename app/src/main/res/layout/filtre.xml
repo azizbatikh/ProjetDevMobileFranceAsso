@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtres"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/check_je_suis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Je suis ?" />
+
+    <CheckBox
+        android:id="@+id/check_besoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Besoin principal ?" />
+
+    <Button
+        android:id="@+id/btn_apply_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appliquer" />
+</LinearLayout>
