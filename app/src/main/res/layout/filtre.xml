@@ -1,32 +1,240 @@
-<?xml version="1.0" encoding="utf-8"?>
+ <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@android:color/white">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Filtres"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal"
+        android:padding="16dp">
 
-    <CheckBox
-        android:id="@+id/check_je_suis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Je suis ?" />
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/exit"
+            android:clickable="true"
+            />
 
-    <CheckBox
-        android:id="@+id/check_besoin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Besoin principal ?" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Filtre"
+            android:textSize="18sp"
+            android:gravity="center" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_apply_filters"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Appliquer" />
+        android:layout_height="607dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Filtre "Je suis" -->
+            <LinearLayout
+                android:id="@+id/filter_je_suis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Je suis?"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/expand_je_suis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:src="@drawable/add" />
+
+                </LinearLayout>
+
+                <!-- Contenu expansible ici -->
+                <LinearLayout
+                    android:id="@+id/content_je_suis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/je_suis_option_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Étudiant" />
+
+                    <CheckBox
+                        android:id="@+id/je_suis_option_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Professionnel" />
+
+                    <CheckBox
+                        android:id="@+id/je_suis_option_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="En recherche d'emploi" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Filtre "Le Résultat Principal?" -->
+            <LinearLayout
+                android:id="@+id/filter_resultat_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Le Résultat Principal?"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/expand_resultat_principal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:src="@drawable/add" />
+                </LinearLayout>
+
+                <!-- Contenu expansible ici -->
+                <LinearLayout
+                    android:id="@+id/content_resultat_principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/resultat_principal_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/resultat_principal_option_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Obtenir un diplôme" />
+
+                        <RadioButton
+                            android:id="@+id/resultat_principal_option_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Trouver un emploi" />
+
+                        <RadioButton
+                            android:id="@+id/resultat_principal_option_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Améliorer mes compétences" />
+                    </RadioGroup>
+                </LinearLayout>
+                ²
+            </LinearLayout>
+
+            <!-- Filtre "Votre Situation Actuelle?" -->
+            <LinearLayout
+                android:id="@+id/filter_situation_actuelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Votre Situation Actuelle?"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/expand_situation_actuelle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:src="@drawable/add" />
+                </LinearLayout>
+
+                <!-- Contenu expansible ici -->
+                <LinearLayout
+                    android:id="@+id/content_situation_actuelle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <CheckBox
+                        android:id="@+id/situation_actuelle_option_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Employé" />
+
+                    <CheckBox
+                        android:id="@+id/situation_actuelle_option_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Sans emploi" />
+
+                    <CheckBox
+                        android:id="@+id/situation_actuelle_option_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="En formation" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/shapeorange"
+        android:text="@string/accepterlesfiltres"
+
+
+        />
 </LinearLayout>

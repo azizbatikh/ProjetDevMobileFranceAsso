@@ -31,8 +31,6 @@ public class AssociationAdapter extends RecyclerView.Adapter<AssociationAdapter.
         association association = associations.get(position);
         holder.nameTextView.setText(association.getNom());
         holder.imageView.setImageResource(association.getNumimage());
-
-        // Pas besoin de modifier le fond car il est défini dans le XML
     }
 
     @Override

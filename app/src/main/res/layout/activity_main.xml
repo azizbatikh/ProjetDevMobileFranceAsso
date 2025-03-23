@@ -70,6 +70,7 @@
         android:textStyle="bold"
         android:padding="12dp"
         android:textSize="18dp"
+        android:id="@+id/versguide"
         />
 
 

@@ -22,6 +22,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Page2" android:exported="true" />
+        <activity android:name=".filtre" android:exported="true" />
+        <activity android:name=".pagequestion" android:exported="true" />
+        <activity android:name=".secondguidedquestion" android:exported="true" />
+
     </application>
 
 </manifest>

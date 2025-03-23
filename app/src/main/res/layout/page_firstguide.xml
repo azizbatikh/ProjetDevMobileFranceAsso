@@ -1,11 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/page2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".Page2"
+    android:id="@+id/pagefirstguide"
     >
     <ImageView
         android:layout_width="80px"
@@ -19,53 +18,45 @@
         android:clickable="true"
         />
 
-    <ImageButton
-        android:layout_width="80px"
-        android:layout_height="100px"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="-38dp"
-        android:background="@color/white"
-        android:scaleType="fitCenter"
-        android:src="@drawable/reglage"
-        />
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/barrederecherche"
-        android:iconifiedByDefault="false"
-        android:queryHint="Rechercher..."
-        android:layout_gravity="center"
-        />
     <TextView
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="25dp"
-        android:id="@+id/textFilter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/filtretexte"
-        android:textColor="#000000"
-        android:textSize="14dp"
-        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp"
         android:fontFamily="@font/calistoga"
-        android:clickable="true"
-        android:focusable="true"
-
-        />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listedons"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:padding="10dp"
-        android:scrollbars="vertical" />
+        android:text="@string/firstguidedquestion"
+        android:textSize="20dp" />
 
     <View
-        android:layout_width="wrap_content"
-        android:layout_height="10px"
-        android:background="@drawable/gradient"
-        android:layout_marginTop="60dp"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/vertnoir" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/shapeorange"
+        android:text="Pour moi "
+        android:fontFamily="@font/calistoga"
+        android:id="@+id/premierbutton"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/shapeorange"
+        android:fontFamily="@font/calistoga"
+        android:text="Pour un Proche "
+        android:textSize="16sp"
+        android:textStyle="bold"
         />
 
     <com.google.android.flexbox.FlexboxLayout
@@ -75,6 +66,7 @@
         app:flexDirection="row"
         app:justifyContent="center"
         android:padding="10dp"
+        android:layout_marginTop="140dp"
         >
         <ImageButton
             android:layout_width="wrap_content"

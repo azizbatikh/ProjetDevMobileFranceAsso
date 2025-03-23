@@ -4,4 +4,7 @@
     <string name="secondtexte">Trouver par nom </string>
     <string name="troisiemetexte">aidez moi a trouver une organisation  </string>
     <string name="filtretexte">Ajouter un filtre </string>
+    <string name="accepterlesfiltres">Appliquer les modifications </string>
+    <string name="firstguidedquestion">Trouver une Organisation </string>
+    <string name="secondguidedquestion">En quoi avez vous besoin d une association </string>
 </resources>

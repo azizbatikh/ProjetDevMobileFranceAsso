@@ -1,5 +1,7 @@
 package com.example.sae_partiemohamed;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
@@ -77,6 +79,23 @@ public class Page2 extends AppCompatActivity {
             v.setPadding(left, top, right, bottom);
             return insets;
         });
+        TextView addFiltersText = findViewById(R.id.textFilter);
+        addFiltersText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Page2.this, filtre.class);
+                startActivity(intent);
+            }
+        });
+             ImageView retour = findViewById(R.id.backbutton);
+             retour.setOnClickListener(new View.OnClickListener() {
+                 @Override
+                 public void onClick(View v) {
+                     finish();
+                 }
+             });
+
+
     }
 
     // Correction de la méthode: type de retour spécifique, nom de classe avec majuscule, et ajout du troisième élément manquant
