@@ -7,4 +7,6 @@
     <string name="accepterlesfiltres">Appliquer les modifications </string>
     <string name="firstguidedquestion">Trouver une Organisation </string>
     <string name="secondguidedquestion">En quoi avez vous besoin d une association </string>
+    <string name="resultat">voici les resultats obtenus </string>
+    <string name="cause">Quelles causes vous tiennent le plus à cœur ? </string>
 </resources>

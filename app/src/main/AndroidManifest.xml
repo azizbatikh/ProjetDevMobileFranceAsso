@@ -25,6 +25,8 @@
         <activity android:name=".filtre" android:exported="true" />
         <activity android:name=".pagequestion" android:exported="true" />
         <activity android:name=".secondguidedquestion" android:exported="true" />
+        <activity android:name=".result" android:exported="true" />
+        <activity android:name=".thirdguidedquestion" android:exported="true" />
 
     </application>
 

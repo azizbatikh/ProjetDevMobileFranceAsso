@@ -17,7 +17,9 @@
         android:id="@+id/questioncontainer"
         android:gravity="center"
         android:background="@drawable/shapeassociaiton"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:clickable="true"
+        >
 
     <TextView
         android:id="@+id/question"

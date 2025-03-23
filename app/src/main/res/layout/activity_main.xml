@@ -15,9 +15,10 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="45px"
         android:scaleType="fitCenter"
+        android:clickable="true"
         />
 
-    <ImageButton
+    <ImageView
         android:layout_width="80px"
         android:layout_height="100px"
         android:layout_marginLeft="300dp"
@@ -25,6 +26,7 @@
         android:background="@color/white"
         android:scaleType="fitCenter"
         android:src="@drawable/reglage"
+        android:clickable="true"
         />
 
     <TextView

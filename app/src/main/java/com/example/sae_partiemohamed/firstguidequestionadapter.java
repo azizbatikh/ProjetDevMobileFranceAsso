@@ -1,5 +1,6 @@
 package com.example.sae_partiemohamed;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +31,13 @@ public class firstguidequestionadapter extends RecyclerView.Adapter<firstguidequ
     public void onBindViewHolder(@NonNull questionview holder, int position) {
         question question = firstguidequestions.get(position);
         holder.nameTextView.setText(question.getQuestion());
+        holder.container.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), result.class);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override

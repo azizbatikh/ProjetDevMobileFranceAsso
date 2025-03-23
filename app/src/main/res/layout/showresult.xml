@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:id="@+id/pagefirstguide"
+    android:id="@+id/resultat"
     >
     <ImageView
         android:layout_width="80px"
@@ -24,7 +24,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="45dp"
         android:fontFamily="@font/calistoga"
-        android:text="@string/firstguidedquestion"
+        android:text="@string/resultat"
         android:textSize="20dp" />
 
     <View
@@ -33,31 +33,18 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/vertnoir" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listeassoobtenus"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/shapeorange"
-        android:text="Pour moi "
-        android:fontFamily="@font/calistoga"
-        android:id="@+id/premierbutton"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/shapeorange"
-        android:fontFamily="@font/calistoga"
-        android:text="Pour un Proche "
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:id="@+id/deuxiemebutton"
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10px"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="60dp"
         />
 
     <com.google.android.flexbox.FlexboxLayout
@@ -67,8 +54,6 @@
         app:flexDirection="row"
         app:justifyContent="center"
         android:padding="10dp"
-        android:layout_marginTop="80dp"
-        android:layout_alignParentBottom="true"
         >
         <ImageButton
             android:layout_width="wrap_content"
@@ -93,6 +78,8 @@
             />
 
     </com.google.android.flexbox.FlexboxLayout>
+
+
 
 
 </LinearLayout>
